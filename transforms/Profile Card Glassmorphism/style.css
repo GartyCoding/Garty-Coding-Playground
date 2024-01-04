@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@600;700&display=swap");
+
+body {
+  margin: 0;
+  height: 100vh;
+  background-image: url(BG-Img.png);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Raleway", Arial, sans-serif;
+}
+
+.card {
+  width: 283px;
+  height: 392px;
+  border-radius: 30px;
+  border: 1px solid #FFF;
+  background: rgba(217, 217, 217, 0.10);
+  backdrop-filter: blur(10px);
+  text-align: center;
+  padding: 30px;
+}
+
+.wrap-imgbox {
+  height: 100px;
+  width: 100%;
+}
+
+.imgbox-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.wrap-imgbox:hover .imgbox-inner {
+  transform: rotateY(180deg);
+}
+
+.imgbox,
+.imgbox-back {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  overflow: hidden;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+img {
+  width: 100%;
+}
+
+.imgbox-back {
+  transform: rotateY(180deg) translate(50%, -50%);
+}
+
+h2 {
+  color: #FFF;
+  font-size: 32px;
+  font-weight: 500;
+}
+
+p {
+  margin: 0;
+  color: #FFF;
+  font-size: 18px;
+  line-height: 29px;
+  font-weight: 500;
+}
+
+.icon-contact {
+  margin-top: 18px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.btn-contact {
+  border-radius: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 18px;
+  display: inline-block;
+  color: #FFF;
+  position: relative;
+  transition: .5s;
+}
+
+.btn-contact::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  transition: .5s;
+  transform: scale(.9);
+  z-index: -1;
+}
+
+.btn-contact:nth-child(1):hover {
+  color: #1877F2;
+  box-shadow: 0 0 5px #1877F2;
+  text-shadow: 0 0 5px #1877F2;
+}
+
+.btn-contact:nth-child(1):hover::before {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #1877F2;
+  background: #1877F2;
+}
+
+.btn-contact:nth-child(2):hover {
+  color: #E1306C;
+  box-shadow: 0 0 5px #E1306C;
+  text-shadow: 0 0 5px #E1306C;
+}
+
+.btn-contact:nth-child(2):hover::before {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #E1306C;
+  background: #E1306C;
+}
+
+.btn-contact:nth-child(3):hover {
+  color: #58ea00;
+  box-shadow: 0 0 5px #58ea00;
+  text-shadow: 0 0 5px #58ea00;
+}
+
+.btn-contact:nth-child(3):hover::before {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #58ea00;
+  background: #58ea00;
+
+}
+
+.btn-msg {
+  color: #C83BAE;
+  font-size: 18px;
+  line-height: 35px;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  background-color: #FFF;
+  border-radius: 90px;
+  margin-top: 30px;
+  display: inline-flex;
+  padding: 0 30px;
+  position: relative;
+}
+
+.btn-msg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 6px;
+  width: calc(100% - 12px);
+  height: 100%;
+  border-radius: 90px;
+  transition: .5s;
+  transform: scale(.9);
+  z-index: -1;
+}
+
+.btn-msg:hover {
+  color: #C83BAE;
+  box-shadow: 0 0 5px #C83BAE;
+  text-shadow: 0 0 5px #C83BAE;
+}
+
+.btn-msg:hover::before {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #C83BAE;
+  background: #C83BAE;
+}
