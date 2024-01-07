@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+body
+{
+	overflow: hidden;
+}
+
+section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background: #0A0A0E;
+}
+
+
+.star1 {	
+	position: absolute;
+	border-radius: 96px;
+	background: radial-gradient(50% 50% at 50% 50%, #FFF1E4 15.1%, rgba(255, 200, 58, 0.00) 100%);
+	flex-shrink: 0;
+	fill: #FF5E5E;
+	mix-blend-mode: color-dodge;
+	box-shadow: 0 0 20px #FF5E5E,
+	0 0 20px #FF5E5E,
+	0 0 40px #FF5E5E,
+	0 0 80px #FF5E5E;
+	animation: stars linear infinite;
+}
+
+.star2 {
+	position: absolute;
+	background: radial-gradient(50% 50% at 50% 50%, #FFF1E4 3.65%, rgba(58, 113, 255, 0.00) 100%);
+	border-radius: 50%;
+	flex-shrink: 0;
+	animation: stars linear infinite;
+}
+
+@keyframes stars {
+	0% {
+		opacity: 0;
+	}
+	10% {
+		opacity: 1;
+	}
+	90% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+.rigel {
+	width: 500px;
+	height: 500px;
+	border-radius: 100%;
+	background: #FFFFF7;
+	box-shadow: 0px 0px 70px #00A3FF;
+	border: 2px solid #b8ffff;
+	position: absolute;
+    top: -45%;
+    right: 0;
+	transition: all 2s;
+}
+
+.box-sun {
+	position: absolute;
+    left: 30%;
+    top: 30%;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.sun {
+	min-width: 50px;
+	width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background: #ffe1ab;
+    box-shadow: 0px 0px 70px #ff8d00;
+    border: 2px solid #ffb860;
+	cursor: pointer;
+}
+
+.sun:hover ~ .desc {
+	opacity: 1;
+}
+
+.box-sirius {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	display: flex;
+    gap: 40px;
+    align-items: center;
+	transition: all 2s;
+}
+
+.sirius {
+	width: 200px;
+	height: 200px;
+	border-radius: 100%;
+	background: #FFFFF7;
+	box-shadow: 0px 0px 70px #00A3FF;
+	border: 2px solid #b8ffff;
+	cursor: pointer;
+}
+
+.sirius:hover ~ .desc {
+	opacity: 1;
+}
+
+.desc {
+	color: #FFF;
+	width: 400px;
+	opacity: 0;
+	transition: all 2s;
+}
+
+.dim {
+	opacity: 0.2;
+	transition: all 2s;
+}
+
+.hide-star {
+	display: none;
+}
