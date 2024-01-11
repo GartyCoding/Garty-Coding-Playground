@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(img/BG-blend.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+form {
+    border-radius: 31px;
+    border: 2px solid #FFF;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 4px 9px 50px -1px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(10px);
+    padding: 35px;
+    text-align: center;
+    width: 400px;
+}
+
+h1 {
+    color: #8B302D;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.wrapper-input {
+    position: relative;
+    background: #FEFEFE; 
+    height: 45px; 
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+.wrapper-input > input {
+    border: unset;
+    padding: 0 15px;
+    font-size: 13px;
+    line-height: 38px;
+    color: #8B302D;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+}
+
+.wrapper-input > input:focus-visible {
+    border: unset;
+    outline: none;
+}
+
+.wrapper-input > input:focus ~ .placeholder,
+.wrapper-input > input:valid ~ .placeholder {
+    top: -12px;
+    font-size: 9px;
+}
+
+.placeholder {
+    position: absolute;
+    top: 0;
+    left: 15px;
+    color: #8B302D;
+    font-size: 13px;
+    line-height: 45px;
+    height: 17px;
+    z-index: 0;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -ms-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
+    cursor: text;
+}
+
+.login {
+    border-radius: 10px;
+    background: #8D2C22;
+    width: 100%;
+    color: #FFF;
+    text-align: center;
+    font-size: 15px;
+    line-height: 45px;
+    font-weight: 500;
+    border: unset;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+
+.login:hover {
+    background: #581e18;
+}
+    
+.wrapper-link {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper-link > a {
+    color: #8D2C22;
+    font-size: 12px;
+    font-weight: 500;
+    transition: all 1s ease;
+}
+
+.wrapper-link > a:hover {
+    color: #581e18;
+}
+
+.leaf {
+    width: 36px;
+    position: absolute;
+    top: -40px;
+    animation: leaffall 15s infinite;
+}
+
+.leaf:nth-child(1) {
+    left: 10%;
+    animation-delay: 10s;
+}
+
+.leaf:nth-child(2) {
+    left: 20%;
+    animation-delay: 2s;
+}
+
+.leaf:nth-child(3) {
+    left: 15%;
+    animation-delay: 6s;
+}
+
+.leaf:nth-child(4) {
+    left: 50%;
+    animation-delay: 12s;
+}
+
+.leaf:nth-child(5) {
+    left: 70%;
+    animation-delay: 5s;
+}
+
+.leaf:nth-child(6) {
+    left: 80%;
+    animation-delay: 15s;
+}
+
+.leaf:nth-child(7) {
+    left: 60%;
+    animation-delay: 12s;
+}
+
+.leaf:nth-child(8) {
+    left: 75%;
+    animation-delay: 9s;
+}
+
+.leaf:nth-child(9) {
+    left: 40%;
+    animation-delay: 13s;
+}
+
+.leaf:nth-child(10) {
+    left: 55%;
+    animation-delay: 7s;
+}
+
+.leaf:nth-child(11) {
+    left: 90%;
+    animation-delay: 1s;
+}
+
+@keyframes leaffall {
+    0% {
+       top: -40px;
+    }
+    100% {
+       top: 100%;
+    }
+}
+    
