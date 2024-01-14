@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  background-image: url(img/Frame.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  background: transparent;
+  border: none;
+}
+
+input:focus-visible {
+  outline: none;
+}
+
+section {
+  position: relative;
+}
+
+.card {
+  width: 365px;
+  height: 229px;
+  border-radius: 35.066px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: radial-gradient(
+    254.43% 143.73% at 6.62% 2.73%,
+    rgba(255, 255, 255, 0.42) 0%,
+    rgba(255, 255, 255, 0.06) 100%
+  );
+  backdrop-filter: blur(6px);
+  position: relative;
+  overflow: hidden;
+  border-bottom: transparent;
+}
+
+.card-inner {
+  padding: 16px;
+  height: calc(100% - 75px);
+  position: relative;
+}
+
+.card-inner p {
+  color: #000;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1px;
+}
+
+.wrapper-input {
+  display: flex;
+  position: absolute;
+  left: 16px;
+  bottom: 16px;
+}
+
+.wrapper-input > input {
+  color: #000;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 4px;
+  background-color: transparent;
+  border: none;
+  width: 18%;
+}
+
+.highlight {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 75px;
+  background: linear-gradient(
+    90deg,
+    #ffbcbc -2.67%,
+    rgba(24, 238, 225, 0.77) -2.66%,
+    #5c45ec 46.93%,
+    #ff00e5 99.74%
+  );
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.col-r {
+  margin-right: 16px;
+  position: relative;
+}
+
+.col-r::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  margin-top: -20px;
+  left: 0;
+  margin-left: -15px;
+  width: 40px;
+  height: 40px;
+  z-index: 0;
+  border-radius: 100%;
+  background: radial-gradient(
+    254.43% 143.73% at 6.62% 2.73%,
+    rgba(255, 255, 255, 0.21) 0%,
+    rgba(255, 255, 255, 0.03) 100%
+  );
+  backdrop-filter: blur(6px);
+}
+
+.col-r::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  margin-top: -20px;
+  right: 0;
+  margin-right: -15px;
+  width: 40px;
+  height: 40px;
+  z-index: 0;
+  border-radius: 100%;
+  background: radial-gradient(
+    254.43% 143.73% at 6.62% 2.73%,
+    rgba(255, 255, 255, 0.21) 0%,
+    rgba(255, 255, 255, 0.03) 100%
+  );
+  backdrop-filter: blur(6px);
+}
+
+.col-r > img {
+  position: relative;
+  z-index: 1;
+}
+
+.col-l p {
+  color: #fff;
+  text-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25);
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1px;
+  padding-right: 5px;
+}
+
+.wrapper-valid {
+  display: flex;
+}
+
+.valid {
+  color: #fff;
+  text-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25);
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: normal;
+  width: 25px;
+}
+
+.name-hloder {
+  color: #fff;
+  text-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.valid::placeholder,
+.name-hloder::placeholder {
+  color: #fff;
+  opacity: 0.8;
+}
+
+.ballon {
+  position: absolute;
+  border-radius: 100%;
+  background: radial-gradient(
+      57.13% 57.13% at 33.41% 45.33%,
+      rgba(255, 255, 255, 0.4) 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    linear-gradient(161deg, #ffc3c3 35.08%, #e24b4b 87.19%);
+  animation: ballonMoving 3s linear infinite;
+  transition: all 3s;
+}
+
+.ballon-1 {
+  width: 167.211px;
+  height: 167.211px;
+  transform: rotate(38.745deg);
+  top: -87px;
+  right: -10%;
+}
+
+.ballon-2 {
+  width: 108.524px;
+  height: 108.524px;
+  transform: rotate(38.745deg);
+  top: -60px;
+  right: 50%;
+  animation-delay: 4s;
+}
+
+.ballon-3 {
+  width: 196.055px;
+  height: 196.055px;
+  transform: rotate(-16.457deg);
+  left: -25%;
+  bottom: -20%;
+  animation-delay: 2s;
+}
+
+.ballon-4 {
+  width: 145px;
+  height: 145px;
+  transform: rotate(38.745deg);
+  right: -30%;
+  bottom: 5%;
+  z-index: 1;
+  animation-delay: 5s;
+}
+
+@keyframes ballonMoving {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
