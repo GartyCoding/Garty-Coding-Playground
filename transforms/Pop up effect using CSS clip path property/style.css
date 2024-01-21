@@ -1,0 +1,56 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Raleway", Arial, sans-serif;
+  background-image: url(img/Frame.jpg);
+  background-size: cover;
+}
+
+.card {
+  width: 500px;
+  height: 250px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: radial-gradient(
+    254.43% 143.73% at 6.62% 2.73%,
+    rgba(255, 255, 255, 0.42) 0%,
+    rgba(255, 255, 255, 0.06) 100%
+  );
+  backdrop-filter: blur(6px);
+  padding: 20px 80px 20px 20px;
+  border-radius: 10px;
+  transition: all 0.5s;
+  clip-path: circle(7% at 93% 20%);
+  cursor: pointer;
+  animation: ballonMoving 3s linear infinite;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+}
+
+.card:hover {
+  clip-path: circle(70%);
+}
+
+@keyframes ballonMoving {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
