@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #E4DFF3;
+}
+.card
+{
+    position: relative;
+    width: 320px;
+    height: 420px;
+    background: #122936;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px 8px #CAAFF5;
+}
+.card:before
+{
+    content: '';
+    position: absolute;
+    top: -50%;
+    width: 100%;
+    height: 100%;
+    background: #A44CE6;
+    transform: skewY(345deg);
+    transition: 0.5s;
+}
+.card:hover:before
+{
+    top: -70%;
+    transform: skewY(390deg);
+}
+.card:after
+{
+    content: 'GARTY';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: rgba(0,0,0,0.1);
+    font-weight: 600;
+    font-size: 8em;
+    transition: 0.5s;
+}
+.card .imgBx
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    z-index: 1;
+}
+.card .imgBx img
+{
+    max-width: 100%;
+    transition: 0.5s;
+}
+.card:hover .imgBx img
+{
+    max-width: 50%;
+}
+.card .contentBx
+{
+    position: relative;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+}
+.card .contentBx h3
+{
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.card .contentBx .price
+{
+    font-size: 24px;
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.card .contentBx .buy
+{
+    position: relative;
+    top: 200px;
+    padding: 10px 30px;
+    margin-top: 15px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 30px;
+    background: #2196f3;
+    opacity: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.5s;
+}
+.card:hover .contentBx .buy
+{
+    opacity: 1;
+    top: 0px;
+}
