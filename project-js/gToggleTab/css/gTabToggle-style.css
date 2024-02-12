@@ -1,0 +1,196 @@
+/* ********************* Tab  ********************* */
+.g-tab-toggle-content {
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.g-tab-toggle-content.basic .g-tab-wrapper {
+  justify-content: center;
+}
+
+.g-tab-toggle-content.basic .g-tab-button {
+  display: none;
+}
+
+.g-tab-toggle-content.basic .g-tab-list {
+  margin: 0 10px;
+}
+
+.g-tab-toggle-inner {
+  padding-right: 32px;
+}
+
+.g-tab-toggle {
+  position: relative;
+}
+
+.g-tab-toggle::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: -32px;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.g-tab-toggle .simplebar-track.simplebar-horizontal {
+  display: none;
+}
+
+.g-tab-wrapper {
+  display: flex;
+  flex-flow: row;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  padding: 0 20px;
+}
+
+.g-tab-list {
+  white-space: nowrap;
+  margin-right: 25px;
+  line-height: 32px;
+  color: #999;
+  cursor: pointer;
+  position: relative;
+}
+
+.g-tab-list.active {
+  font-weight: 600;
+  color: #3d90ef;
+  border-bottom: 3px solid #3d90ef;
+}
+
+.g-tab-list:after {
+  width: 0;
+  transition: all 3s ease-in-out;
+}
+
+.g-tab-button {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 6px;
+  right: 0px;
+  border: none;
+  background: #fff;
+  border-left: 1px solid #cbcbcb;
+  cursor: pointer;
+}
+
+.g-tab-arrow {
+  width: 10px;
+  height: 10px;
+  border-bottom: 2px solid #3d90ef;
+  border-right: 2px solid #3d90ef;
+  display: block;
+  margin-top: -5px;
+  margin-left: 7px;
+  transform: rotate(45deg);
+}
+
+.g-float {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  display: none;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.g-float.active {
+  display: block;
+  z-index: 9;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.g-float-head {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  align-items: center;
+}
+
+.g-float-head::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.g-float-label {
+  color: #333;
+  font-weight: 600;
+  line-height: 35px;
+  padding-left: 20px;
+}
+
+.g-float-wrapper {
+  list-style-type: none;
+  padding: 20px;
+}
+
+.float-tab-link {
+  list-style-type: none;
+  border-radius: 25px;
+  color: #999999;
+  padding: 0 15px;
+  line-height: 32px;
+  background: #f5f5f5;
+  border: solid 2px #f5f5f5;
+  cursor: pointer;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.float-tab-link.active {
+  color: #3d90ef;
+  background: white;
+  border-color: #3d90ef;
+}
+
+.g-float-button {
+  width: 24px;
+  height: 24px;
+  border: none;
+  background: #fff;
+  border-left: 1px solid #cbcbcb;
+}
+
+.g-float-button .g-tab-arrow {
+  transform: rotate(225deg);
+  margin-top: 2px;
+  margin-left: 8px;
+}
+
+.g-content {
+  padding-top: 16px;
+  display: none;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 16px;
+  margin-top: 10px;
+}
+
+.g-content.active {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .g-tab-button {
+    display: none;
+  }
+
+  .g-tab-toggle-inner {
+    padding-right: 0;
+  }
+
+  .g-tab-toggle::before {
+    right: 0;
+  }
+}
+/* ********************* End of tab ********************* */
