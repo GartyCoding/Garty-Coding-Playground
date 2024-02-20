@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(img/bg.png);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+section {
+  position: absolute;
+}
+
+.item {
+  width: 500px;
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  animation: moving 1.5s ease-in-out infinite alternate;
+}
+
+.item:nth-child(2) {
+  width: 200px;
+  max-width: 200px;
+  animation-delay: 3s;
+}
+
+img {
+  width: 100%;
+}
+
+.float-item {
+  position: absolute;
+  width: 250px;
+  max-width: 250px;
+  bottom: -20px;
+  right: -20px;
+}
+
+.float-item2 {
+  position: absolute;
+  width: 250px;
+  max-width: 250px;
+  bottom: -20px;
+  left: -20px;
+}
+
+.float-item3 {
+  position: absolute;
+  width: 100px;
+  max-width: 100px;
+  width: 100px;
+  bottom: -50px;
+  left: 30%;
+}
+
+.float-item4 {
+  position: absolute;
+  width: 100px;
+  max-width: 100px;
+  width: 100px;
+  bottom: -50px;
+  left: 60%;
+  transform: rotate(300deg);
+}
+
+/* .ballon-wrapper {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+} */
+
+.ballon {
+  position: absolute;
+  top: 100%;
+  animation: floating 15s ease-in-out infinite forwards;
+}
+
+.ballon:nth-child(1) {
+  left: 0;
+  animation-delay: 2s;
+}
+
+.ballon:nth-child(2) {
+  left: 20%;
+  animation-delay: 6s;
+}
+
+.ballon:nth-child(3) {
+  right: 20%;
+  animation-delay: 3s;
+}
+
+.ballon:nth-child(4) {
+  right: 10%;
+  animation-delay: 5s;
+}
+
+.ballon:nth-child(5) {
+  right: 0;
+  animation-delay: 1s;
+}
+
+.ballon:nth-child(6) {
+  left: 10%;
+  animation-delay: 10s;
+}
+
+.ballon:nth-child(7) {
+  right: 15%;
+  animation-delay: 13s;
+}
+
+.ballon:nth-child(8) {
+  left: 15%;
+  animation-delay: 13s;
+}
+
+@keyframes moving {
+  from {
+    transform: translateY(-0.5rem);
+  }
+  to {
+    transform: translateY(0.5rem);
+  }
+}
+
+@keyframes floating {
+  from {
+    top: 100%;
+  }
+  to {
+    top: -100%;
+  }
+}
