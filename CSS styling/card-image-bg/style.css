@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #dce5f2;
+}
+
+.card-container {
+    width: 500px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card {
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 15px;
+    height: 150px;
+    background-size: cover;
+    background-position: bottom;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.card::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.card:nth-child(1) {
+    background-image: url(../card-image-bg/img/tv.jpg);
+}
+
+.card:nth-child(2) {
+    background-image: url(../card-image-bg/img/soundbar.jpg);
+}
+
+.card:nth-child(3) {
+    background-image: url(../card-image-bg/img/soundbar.jpg);
+}
+
+.half {
+    width: 48%;
+}
+
+.full {
+    width: 100%;
+}
+
+.card > p {
+    color: #FFF;
+    position: relative;
+    z-index: 1;
+    margin-top: 0;
+    transition: margin-top 500ms ease;
+}
+
+.card:hover p {
+    margin-top: -10px;
+   
+}
